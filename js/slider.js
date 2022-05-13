@@ -1,9 +1,4 @@
-$(window).on("load", function () {
-  var vW = $(window).width();
-    if (vW < 992) {
-        $(".ox10-all-projects").addClass("container");
-      }
-});
+
 jQuery(document).ready(function ($) {
     (function ($) {
       "use strict";

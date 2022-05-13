@@ -572,6 +572,12 @@ body .ox10-designer{
   body .ox10-purple-btn{
     padding: 0.8%;
   } 
+  .ox10-projects-wrap .ox10-second-level-title{
+    margin-left: 15%;
+  }
+  .ox10-projects-wrap .ox10-purple-btn.outlined{
+    margin-left: 15%;
+  }
   body .ox10-services{
     padding-right: 258px;
   }
