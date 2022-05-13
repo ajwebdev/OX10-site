@@ -1,15 +1,15 @@
 $(function(){
-    var totalItems = $('.testmonial-carousel .carousel-item').length;
-    var currentIndex = $('.testmonial-carousel .carousel-item.active').index() + 1;
+    var totalItems = $('.testimonial-carousel .carousel-item').length;
+    var currentIndex = $('.testimonial-carousel .carousel-item.active').index() + 1;
     $('.ox10-carousel-count').html('' + currentIndex + '/' + totalItems + '');
 
-    $('#testmonial-carousel').carousel({
+    $('#testimonial-carousel').carousel({
       interval: 2000
     });
 
-    $('#testmonial-carousel').bind('slid', function() {
+    $('#testimonial-carousel').bind('slid', function() {
       console.log('hello');
-      currentIndex = $('.testmonial-carousel .carousel-item.active').index() + 1;
+      currentIndex = $('.testimonial-carousel .carousel-item.active').index() + 1;
       $('.ox10-carousel-count').html('' + currentIndex + '/' + totalItems + '');
     });
 
