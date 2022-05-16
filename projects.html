@@ -16,7 +16,7 @@
 
 <body>
   <!-- Start of the navigation section-->
-  <nav class="ox10-navbar navbar navbar-expand-lg">
+  <nav class="ox10-navbar navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/ox10-logo.svg" alt="Ox10" class="d-inline-block align-text-topbody ox10-nav-img-align" />
@@ -28,16 +28,16 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link ox-10-active-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link  ox10-nav-link " id="home" value="home" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ox10-nav-link" href="projects.html">Projects</a>
+            <a class="nav-link ox10-nav-link active" id="projects" value="projects" href="projects.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ox10-nav-link" href="#">Services</a>
+            <a class="nav-link ox10-nav-link" id="services" value="services" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ox10-nav-link" href="#">About us</a>
+            <a class="nav-link ox10-nav-link" id="about" value="about" href="index.html#ox10-about-us-wrap">About us</a>
           </li>
           <li class="nav-item">
             <button type="button" class="btn ox10-talk-to-us-button">
@@ -48,7 +48,6 @@
       </div>
     </div>
   </nav>
-
   <!-- end of the navigation section-->
 
   <!---------------Lets's be proud together start-------------------------------->
@@ -76,17 +75,17 @@
     <nav class="ox10-all-projects-nav">
       <ul class="nav-list">
         <li class="ox10-all-projects-nav-item">
-          <a class="nav-list-link ox-10-active-link" aria-current="page" href="#all-projects " value="all-projects">
+          <a class="nav-list-link ox-10-active-link" id="all" aria-current="page" href="#all-projects " value="all-projects">
             All Projects</a>
         </li>
         <li class="ox10-all-projects-nav-item ">
-          <a class="nav-list-link ox10-nav-link" href="#events" value="events">Events</a>
+          <a class="nav-list-link ox10-nav-link" id="project1" href="#events" value="events">Events</a>
         </li>
         <li class="ox10-all-projects-nav-item ">
-          <a class="nav-list-link ox10-nav-link" href="#branding"  value="branding">Branding</a>
+          <a class="nav-list-link ox10-nav-link" id="project2" href="#branding"  value="branding">Branding</a>
         </li>
         <li class="ox10-all-projects-nav-item ">
-          <a class="nav-list-link ox10-nav-link" href="#product-launches" value="product-launches">Product launches</a>
+          <a class="nav-list-link ox10-nav-link" id="project3"href="#product-launches" value="product-launches">Product launches</a>
         </li>
       </ul>
     </nav>
@@ -101,7 +100,7 @@
       <div class="row">
 
         <div class="col-lg-6 col-sm-12">
-          <a href="#">
+          <a href="design-system.html">
               <div class="ox10-each-project">
                 <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
                 <div class="ox10-projects-content">
@@ -371,7 +370,8 @@
 
   <!-- Required JS plugins-->
   <script src="./js/built-in/bootstrap.bundle.min.js"></script>
-  <script src="./js/built-in/jquery.js"></script>
+  <script src="./js/built-in/jquery.js"></script>  
+  <script src="./js/custom/script.js"></script>
   <script src="./js/custom/projects.js"></script>
   
 </body>

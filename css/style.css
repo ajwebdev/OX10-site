@@ -38,7 +38,7 @@ body .nav-item{
   text-align: center;
 
 }
-body .ox-10-active-link{
+.nav-item a.active{
   background-color: #F1E6FF;
   font-family: var(--ox10-primary-font-family);
   border-radius: 6px;
@@ -51,17 +51,17 @@ body .ox-10-active-link{
 body .ox10-nav-link {
   font-family: var(--ox10-primary-font-family);
   font-weight: 400;
-  color: #321158;
+  color: var(--ox10-secondary-color) !important;;
   font-size: 16px;
   line-height: 22px;
   width: 90px;
 }
 
 .nav-list-link:hover{
-  color: #321158;
+  color: var(--ox10-secondary-color) !important;;
 }
 .ox10-nav-link:hover{
-  color: #321158;
+  color: var(--ox10-secondary-color) !important;;
 }
 
 body .ox10-talk-to-us-button {
@@ -89,6 +89,7 @@ body .navbar-light .navbar-toggler {
 body a{
   text-decoration: none;
 }
+
 body .ox10-custom-container {
   width: 100%;
   max-width: 1320px;
@@ -629,9 +630,6 @@ body .ox10-designer{
   body .nav-link{
     display:inline-block;
   }
-  body .ox-10-active-link {
-    background-color: #f3e9ff;
-  }
   body .ox10-nav-btn-align{
     margin: 10px 0px 0px 0px;
     padding-bottom: 15px;
@@ -879,7 +877,7 @@ body .ox10-designer{
     font-size: 12px;
     margin: 0px 0px 0px 5px;
   } 
-  body .ox-10-active-link{
+  .nav-item a.active{
     border-radius: 5px;
     line-height: 20px;
     width: 80px;
@@ -1143,6 +1141,16 @@ body .ox10-project-proud-wrap-text {
   display: initial;
   padding: 0.5rem 1rem;
 }
+.ox-10-active-link{
+  background-color: #F1E6FF;
+  font-family: var(--ox10-primary-font-family);
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--ox10-primary-color) !important;
+  margin: 0px 2px;
+}
 .ox10-all-projects-images {
   padding: 0% 6% 3% 10%;
 }
@@ -1168,6 +1176,18 @@ body .ox10-project-proud-wrap-text {
   display: none;
 }
 
+@media only screen and (min-width: 1400px){
+  body .ox10-all-projects-proud-title {
+    padding: 5% 15% 0% 15%;
+  }
+  .ox10-all-projects-nav{
+    margin-left: 12.2%;
+  }
+  .ox10-all-projects-images {
+    padding: 0% 10% 3% 14%;
+  }
+
+}
 @media only screen and (max-width: 1024px){
   body .ox10-all-projects-proud-title {
     padding:4% 9% 4% 4%;
@@ -1202,11 +1222,10 @@ body .ox10-project-proud-wrap-text {
     margin-top:15px;
   }
   .nav-list{
-    display: block; 
     margin-left: 0px;
   }
   .ox10-all-projects-nav-item{
-    padding-bottom:2%;
+    padding-bottom:5%;
   }
   .ox10-projects-content h4 {
     font-size: 20px;
@@ -1240,8 +1259,12 @@ body .ox10-project-proud-wrap-text {
 }
 @media only screen and (max-width: 480px) {
   .nav-list{
+    display: block; 
     margin-left: -11px;
   }
+  .ox10-all-projects-nav-item {
+    padding-bottom: 2%;
+}
   .ox10-all-projects-nav-item{
     padding-bottom:5%;
   }
@@ -1250,5 +1273,114 @@ body .ox10-project-proud-wrap-text {
 @media only screen and (max-width: 320px) {
   .nav-list{
     margin-left: -16px;
+  }
+}
+
+
+/*
+Project design system section start - design-system.html
+*/
+body .ox10-design-system-title{
+  padding: 5% 10% 0% 10%;
+}
+body .ox10-company-wrap-text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--ox10-section-text-color);
+  padding: 5% 33% 0% 0%;
+}
+.ox10-design-system-projects-images{
+  padding: 0% 10% 5% 10%;
+}
+.ox10-design-system-project-image{
+  padding-bottom: 5%;
+}
+@media only screen and (min-width: 1400px){
+  body .ox10-design-system-title{
+      padding: 5% 15% 4% 15%;
+  }
+  .ox10-design-system-projects-images{
+    padding: 0% 15% 5% 15%;
+  }
+}
+@media only screen and (max-width: 1024px){
+  body .ox10-design-system-title {
+      padding: 4% 9% 4% 4%;
+  }
+  .ox10-design-system-projects-images{
+    padding: 0% 9% 5% 4%;
+  }
+}
+@media only screen and (max-width: 991px){
+  body .ox10-design-system-title {
+      padding: 4%;
+  }
+  body .ox10-company-wrap-text {
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 0%;
+  }
+  .ox10-design-system-project-image{
+    padding-bottom: 8%;
+  }
+  .ox10-design-system-project-image-inner{
+    padding-bottom: 8%;   
+  }
+}
+@media only screen and (max-width: 768px){
+  body .ox10-design-system-title {
+      padding: 5%;
+  }
+  .ox10-design-system-projects-images{
+    padding: 0% 5% 5% 5%;
+  }  
+}
+
+
+/*
+Services section start - services.html
+*/
+  body .ox10-our-services-title {
+    padding: 5% 10% 0% 10%;
+  }
+  .ox10-our-services-wrap-text{
+    font-weight: 400;
+      font-size: 26px;
+      line-height: 40px;
+      color: var(--ox10-section-text-color);
+      padding: 5% 33% 0% 0%;
+  }
+body .ox10-our-services-wrap-text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--ox10-section-text-color);
+    padding: 5% 33% 0% 0%;
+}
+@media only screen and (min-width: 1400px){
+  body .ox10-our-services-title {
+      padding: 5% 15% 0% 15%;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  body .ox10-our-services-title {
+      padding: 4% 9% 4% 4%;
+  }
+}
+@media only screen and (max-width: 991px){
+  body .ox10-our-services-title{
+      padding: 4%;
+  }
+  body .ox10-our-services-wrap-text {
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 0%;
+  }
+}
+@media only screen and (max-width: 768px){
+  body .ox10-our-services-title {
+      padding: 5%;
   }
 }

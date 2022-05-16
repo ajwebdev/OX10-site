@@ -2,24 +2,18 @@ jQuery(document).ready(function ($) {
     (function ($) {
       "use strict";
       if ($(".ox10-projects").length) {
-        console.log("length ",$(".ox10-projects").length);
+      
         var vW = $(window).width();
-        console.log("vW ",vW);
         var vH = $(window).height();
-        console.log("vH ",vH);
         if (vW > 991) {
           $(".ox10-projects").css("paddingLeft", vW + "px");
           var portfolioController = new ScrollMagic.Controller();
-          console.log("portfolioController ",portfolioController);
           var portfolioW =
             $(".ox10-projects a").outerWidth() * $(".ox10-projects a").length;
-            console.log("portfolioW",portfolioW);
           var item = $(".ox10-projects");
-          console.log("item",item);
           var action = gsap
             .timeline()
             .to(item, { x: -(portfolioW + vW) + "px", ease: Linear.easeNone });
-            console.log("action",action);
           var portfolioScene = new ScrollMagic.Scene({
             triggerElement: ".ox10-projects-hook",
             triggerHook: 0.15,
@@ -29,7 +23,6 @@ jQuery(document).ready(function ($) {
   
             .setPin(".ox10-projects-section", { pushFollowers: !0 })
             .addTo(portfolioController);
-            console.log("portfolioScene",portfolioScene);
           var portfolioVscroll = new ScrollMagic.Scene({
             triggerElement: ".ox10-projects-section",
             triggerHook: 0.8,
@@ -39,7 +32,6 @@ jQuery(document).ready(function ($) {
           
             .setTween(action)
             .addTo(portfolioController);
-            console.log("portfolioVscroll",portfolioVscroll);
         }
       }
     })(jQuery);

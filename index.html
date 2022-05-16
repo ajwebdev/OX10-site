@@ -16,7 +16,7 @@
 
 <body>
   <!-- Start of the navigation section-->
-  <nav class="ox10-navbar navbar navbar-expand-lg">
+  <nav class="ox10-navbar navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/ox10-logo.svg" alt="Ox10" class="d-inline-block align-text-topbody ox10-nav-img-align" />
@@ -28,16 +28,16 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link ox-10-active-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link ox10-nav-link active" id="home" value="home" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ox10-nav-link" href="projects.html">Projects</a>
+            <a class="nav-link ox10-nav-link" id="projects" value="projects" href="projects.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ox10-nav-link" href="#">Services</a>
+            <a class="nav-link ox10-nav-link" id="services" value="services" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ox10-nav-link" href="#">About us</a>
+            <a class="nav-link ox10-nav-link" id="about" value="about" href="#ox10-about-us-wrap">About us</a>
           </li>
           <li class="nav-item">
             <button type="button" class="btn ox10-talk-to-us-button">
@@ -149,7 +149,7 @@
 
   <!--- About us section  -->
   <section>
-      <div class="ox10-about-us-wrap">
+      <div class="ox10-about-us-wrap" id="ox10-about-us-wrap">
         <div class="ox10-about-us-first-wrap">
           <h6 class="ox10-second-level-title">About us</h6>
           <p class="ox10-about-us-first-wrap-text">
@@ -271,7 +271,9 @@
                 </div>
             </div>
         </div>
-        <button class="btn ox10-purple-btn outlined">VIEW ALL PROJECTS</button>
+        <a href="projects.html">
+          <button class="btn ox10-purple-btn outlined"  onclick=location.replace() >VIEW ALL PROJECTS</button>
+        </a>
     </section>      
       </div>
   </section>
