@@ -72,22 +72,15 @@
   <!---------------All Projects navigation start -------------------------------->
 
   <section>
-    <nav class="ox10-all-projects-nav">
-      <ul class="nav-list">
-        <li class="ox10-all-projects-nav-item">
-          <a class="nav-list-link ox-10-active-link" id="all" aria-current="page" href="#all-projects " value="all-projects">
-            All Projects</a>
-        </li>
-        <li class="ox10-all-projects-nav-item ">
-          <a class="nav-list-link ox10-nav-link" id="project1" href="#events" value="events">Events</a>
-        </li>
-        <li class="ox10-all-projects-nav-item ">
-          <a class="nav-list-link ox10-nav-link" id="project2" href="#branding"  value="branding">Branding</a>
-        </li>
-        <li class="ox10-all-projects-nav-item ">
-          <a class="nav-list-link ox10-nav-link" id="project3"href="#product-launches" value="product-launches">Product launches</a>
-        </li>
-      </ul>
+    <nav class="ox10-all-projects-nav" id="all-projects-nav-bar">
+      <div class="filters">
+        <ul class="nav-list">
+          <li class="active" data-filter="*">All Projects</li>
+          <li data-filter=".event">Events</li>
+          <li data-filter=".branding">Branding</li>
+          <li data-filter=".product-launches">Product launches</li>
+        </ul>
+    </div>
     </nav>
   </section>
 
@@ -96,11 +89,12 @@
   <!---------------Projects images and content start -------------------------------->
 
    <section>
-    <div class="ox10-all-projects-images" id="all-projects">
-      <div class="row">
-
-        <div class="col-lg-6 col-sm-12">
-          <a href="design-system.html">
+    <div class="filters-content ox10-all-projects-images">
+      <div class="row grid ox10-all-images">
+        <div class="all events">
+          <div class="row">
+          <div class="col-lg-6 item">
+            <a href="#">
               <div class="ox10-each-project">
                 <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
                 <div class="ox10-projects-content">
@@ -109,9 +103,9 @@
                 </div>
               </div>
           </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
+          </div>
+          <div class="col-lg-6 item">
+            <a href="#">
               <div class="ox10-each-project">
                 <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
                 <div class="ox10-projects-content">
@@ -120,9 +114,9 @@
                 </div>
               </div>
           </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
+          </div>
+          <div class="col-lg-6 item">
+            <a href="#">
               <div class="ox10-each-project">
                 <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
                 <div class="ox10-projects-content">
@@ -131,9 +125,13 @@
                 </div>
               </div>
           </a>
+          </div>
         </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
+        </div>
+        <div class="all branding">
+          <div class="row">
+          <div class="col-lg-6 item">
+            <a href="#">
               <div class="ox10-each-project">
                 <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
                 <div class="ox10-projects-content">
@@ -142,9 +140,9 @@
                 </div>
               </div>
           </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
+          </div>
+          <div class="col-lg-6 item">
+            <a href="#">
               <div class="ox10-each-project">
                 <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
                 <div class="ox10-projects-content">
@@ -153,127 +151,60 @@
                 </div>
               </div>
           </a>
+          </div>
+          <div class="col-lg-6 item">
+            <a href="#">
+              <div class="ox10-each-project">
+                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
+                <div class="ox10-projects-content">
+                  <h4>Promise 2 Deliver</h4>
+                  <div class="ox10-company-name">TATA MOTORS</div>
+                </div>
+              </div>
+          </a>
+          </div>
         </div>
-
+        </div>
+        <div class="all product-launches">
+          <div class="row">
+          <div class="col-lg-6 item">
+            <a href="#">
+              <div class="ox10-each-project">
+                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
+                <div class="ox10-projects-content">
+                  <h4>Promise 2 Deliver</h4>
+                  <div class="ox10-company-name">TATA MOTORS</div>
+                </div>
+              </div>
+          </a>
+          </div>
+          <div class="col-lg-6 item">
+            <a href="#">
+              <div class="ox10-each-project">
+                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
+                <div class="ox10-projects-content">
+                  <h4>Promise 2 Deliver</h4>
+                  <div class="ox10-company-name">TATA MOTORS</div>
+                </div>
+              </div>
+          </a>
+          </div>
+          <div class="col-lg-6 item">
+            <a href="#">
+              <div class="ox10-each-project">
+                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
+                <div class="ox10-projects-content">
+                  <h4>Promise 2 Deliver</h4>
+                  <div class="ox10-company-name">TATA MOTORS</div>
+                </div>
+              </div>
+          </a>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
-    <div class="ox10-all-projects-images" id="events">
-      <div class="row">
-
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-       
-      </div>
-    </div>
-    <div class="ox10-all-projects-images" id="branding">
-      <div class="row">
-
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
-    <div class="ox10-all-projects-images" id="product-launches">
-      <div class="row">
-
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <a href="#">
-              <div class="ox10-each-project">
-                <img src="./assets/project_one.png" class="ox10-project-image" alt="Project 1">
-                <div class="ox10-projects-content">
-                  <h4>Promise 2 Deliver</h4>
-                  <div class="ox10-company-name">TATA MOTORS</div>
-                </div>
-              </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
+ 
   </section> 
 
   <!---------------Projects images and content end -------------------------------->

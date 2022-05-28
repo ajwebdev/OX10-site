@@ -159,7 +159,7 @@
         </div>
 
         <div class="ox10-about-us-second-wrap">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" id="ox10-about-us-counter">
             <div class="col-lg-6 row-sm-1">
               <p class="ox10-about-us-second-wrap-title">
                 Trusted by over 25+ corporate companies in India
@@ -167,13 +167,13 @@
             </div>
             <div class="col-lg-3 row-sm-1">
               <div class="ox10-count-wrap">
-                <div class="ox10-count">1000+</div>
+                <div class="ox10-count" data-count="1000">0</div>
                 <div class="ox10-text">Corporate Events</div>
               </div>
             </div>
             <div class="col-lg-3 row-sm-1">
               <div class="ox10-count-wrap">
-                <div class="ox10-count">15+</div>
+                <div class="ox10-count"  data-count="15">0</div>
                 <div class="ox10-text">Years of experience</div>
               </div>
             </div>
@@ -372,7 +372,7 @@
   <section> 
       <div class="ox10-testimonial-wrap">
 
-        <h6 class="ox10-second-level-title">testimonial</h6>
+           <h6 class="ox10-second-level-title">testimonial</h6>
         <div id="testimonial-carousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
           <div class="carousel-inner">
 
@@ -387,13 +387,13 @@
                 </div>
               </div>
               <p class="ox10-testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                1. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                 lectus magna fringilla urna, porttitor rhoncus dolor purus non. Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit ut aliquam, purus sit amet luctus venenatis.
               </p>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item ">
               <div class="ox10-testimonial">
                 <div class="d-flex align-items-center">
                   <div class="ox10-testimonial-image">
@@ -405,7 +405,7 @@
                   </div>
                 </div>
                 <p class="ox10-testimonial-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                  2. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                   lectus magna fringilla urna, porttitor rhoncus dolor purus non. Lorem ipsum dolor sit amet,
                   consectetur
                   adipiscing elit ut aliquam, purus sit amet luctus venenatis.
@@ -425,7 +425,7 @@
                   </div>
                 </div>
                 <p class="ox10-testimonial-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                  3. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                   lectus magna fringilla urna, porttitor rhoncus dolor purus non. Lorem ipsum dolor sit amet,
                   consectetur
                   adipiscing elit ut aliquam, purus sit amet luctus venenatis.
@@ -445,7 +445,7 @@
                   </div>
                 </div>
                 <p class="ox10-testimonial-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                  4. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                   lectus magna fringilla urna, porttitor rhoncus dolor purus non. Lorem ipsum dolor sit amet,
                   consectetur
                   adipiscing elit ut aliquam, purus sit amet luctus venenatis.
@@ -465,7 +465,7 @@
                   </div>
                 </div>
                 <p class="ox10-testimonial-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                  5. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                   lectus magna fringilla urna, porttitor rhoncus dolor purus non. Lorem ipsum dolor sit amet,
                   consectetur
                   adipiscing elit ut aliquam, purus sit amet luctus venenatis.
@@ -485,7 +485,7 @@
                   </div>
                 </div>
                 <p class="ox10-testimonial-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                  6. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
                   lectus magna fringilla urna, porttitor rhoncus dolor purus non. Lorem ipsum dolor sit amet,
                   consectetur
                   adipiscing elit ut aliquam, purus sit amet luctus venenatis.
@@ -496,7 +496,7 @@
           </div>
 
           <div class="ox10-testimonial-carousel-controls d-flex align-items-center justify-content-between">
-            <a class="carousel-control-prev control" href="#testimonial-carousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev control" data-bs-target="#testimonial-carousel" role="button" data-bs-slide="prev">
               <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.2541 0.879736C9.55216 1.17194 9.57926 1.62918 9.33539 1.95139L9.2541 2.0437L2.52658 8.63867L9.2541 15.2336C9.55216 15.5258 9.57926 15.9831 9.33539 16.3053L9.2541 16.3976C8.95604 16.6898 8.48963 16.7164 8.16096 16.4773L8.06679 16.3976L0.745899 9.22065C0.44784 8.92845 0.420743 8.47121 0.66461 8.149L0.745899 8.05669L8.06679 0.879736C8.39466 0.558317 8.92624 0.558317 9.2541 0.879736Z"
@@ -504,7 +504,7 @@
               </svg>
             </a>
             <span class="ox10-carousel-count"></span>
-            <a class="carousel-control-next control" href="#testimonial-carousel" role="button" data-slide="next">
+            <a class="carousel-control-next control" data-bs-target="#testimonial-carousel" role="button" data-bs-slide="next">
               <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.745899 16.3976C0.44784 16.1054 0.420743 15.6482 0.66461 15.326L0.745899 15.2336L7.47342 8.63867L0.745899 2.0437C0.44784 1.7515 0.420743 1.29425 0.66461 0.972047L0.745899 0.879736C1.04396 0.587537 1.51037 0.560973 1.83904 0.800046L1.93321 0.879736L9.2541 8.05669C9.55216 8.34889 9.57926 8.80613 9.33539 9.12834L9.2541 9.22065L1.93321 16.3976C1.60534 16.719 1.07376 16.719 0.745899 16.3976Z"
@@ -563,20 +563,20 @@
 
                 <div class="row row-cols-auto">
 
-                  <div class="col-6">
+                  <div class="col-5">
                     <a href="#" class="d-block text-decoration-none ox10-page-link">Projects</a>
                     <a href="#" class="d-block text-decoration-none ox10-page-link">Our Services</a>
                     <a href="#" class="d-block text-decoration-none ox10-page-link">About us</a>
                   </div>
-                  <div class="col-6">
+                  <div class="col-7">
                     <a href="#" class="d-block text-decoration-none ox10-page-link">Contact us</a>
                     <a href="#" class="d-block text-decoration-none ox10-page-link">Career</a>
                   </div>
-                  <div class="col-lg-6 col-sm-12 col-md-12 ox10-footer-contact">
+                  <div class="col-lg-5 col-sm-12 col-md-12 ox10-footer-contact">
                     <div class="ox10-footer-contact-no">044 2826 4151</div>
                     <div class="ox10-footer-contact-site"> info@ox10.com</div>
                   </div>
-                  <div class="col-lg-6 col-sm-12 col-md-12 ox10-footer-contact">
+                  <div class="col-lg-7 col-sm-12 col-md-12 ox10-footer-contact">
                     <div class="ox10-footer-contact-address">
                       Parsn Manere, NO.7, B - Wing, 8th Floor,
                       Anna Salai, Chennai, Tamil Nadu 600006
