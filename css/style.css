@@ -33,14 +33,11 @@ body .ox10-navbar {
   padding: 27px 180px 27px 140px;
 }
 body .nav-item{
-  margin-left:18px;
+  margin-left:12px;
   height: 38px;
-  width: 73px;
   text-align: center;
-
 }
 .nav-item a.active{
-  background-color: #F1E6FF;
   font-family: var(--ox10-primary-font-family);
   border-radius: 6px;
   font-weight: 400;
@@ -48,6 +45,10 @@ body .nav-item{
   line-height: 22px;
   color: var(--ox10-primary-color) !important;
   margin: 0px 2px;
+  background-color: #F1E6FF;
+  
+ 
+
 }
 body .ox10-nav-link {
   font-family: var(--ox10-primary-font-family);
@@ -56,13 +57,21 @@ body .ox10-nav-link {
   font-size: 16px;
   line-height: 22px;
   width: 90px;
+  background: linear-gradient(to left, transparent 50%, #F1E6FF 50%);
+  background-size: 200%;
+  background-position: right;
+  transition: background-position 0.2s ease-in-out;
+}
+
+body .ox10-nav-link:active {
+  background-position: left;
 }
 
 .nav-list-link:hover{
-  color: var(--ox10-secondary-color) !important;;
+  color: var(--ox10-secondary-color) !important;
 }
 .ox10-nav-link:hover{
-  color: var(--ox10-secondary-color) !important;;
+  color: var(--ox10-secondary-color) !important;
 }
 
 body .ox10-talk-to-us-button {
@@ -82,9 +91,21 @@ body .ox10-talk-to-us-button {
 body .ox10-talk-to-us-button:hover {
    color:var(--ox10-white-color);
 }
-body .navbar-light .navbar-toggler {
+body .ox10-menu-button {
  border:none;
+ width: 35px;
+ height: 35px;
+ background-color: white;
+ display: none;
 }
+.ox10-menu-button .navbar-toggler-icon{
+  width: 35px;
+  height: 35px;
+}
+.closebtn {
+  display: none;
+}
+
 
 /*********** Common Classess *********************/
 body a{
@@ -118,7 +139,6 @@ body .ox10-purple-btn {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  height: 48px;
   padding:13px 32px 13px 32px;
 }
 body .ox10-purple-btn.outlined {
@@ -314,7 +334,6 @@ body .ox10-brand-list-wrap {
 
 .ox10-projects-wrap .ox10-purple-btn.outlined{
   width: 215px;
-  height: 48px;
   margin-top: var(--ox10-purple-btn-margin-top);
 }
 .ox10-company-name{
@@ -417,7 +436,6 @@ body .ox10-service-btn-wrap {
 }
 body .ox10-service-btn-wrap .ox10-purple-btn.primary {
   width: 355px;
-  height: 48px;
 }
 
 /*************************** service section ***************************/
@@ -560,7 +578,7 @@ body .ox10-designer{
     margin-left: 18%;
   }
   body .ox10-talk-to-us-button{
-    margin-left: 350px;
+    margin-left: 310px;
   }
   body .ox10-landing-title {
     padding: 60px 607px 60px 321px;
@@ -639,7 +657,7 @@ body .ox10-designer{
     padding-bottom: 15px;
   }
   body .ox10-talk-to-us-button{
-    margin-left: 100px;
+    margin-left: 80px;
   }
   body .ox10-landing-carousel .carousel-caption{
     margin-left: -3%;
@@ -706,17 +724,90 @@ body .ox10-designer{
 } 
  
 
-@media only screen and (max-width: 991px)    {
+@media only screen and (max-width: 991px) {  
   body .ox10-navbar {
     padding: 24px 10px 22px 10px;
   }
   body .navbar-collapse {
-    margin: 0% 0% 0% -2%;
+    margin-top: 0px;
+    margin-left:0px;
+  }
+  .navbar-collapse:not(.show){
+    display: block;
+  }
+  .navbar-nav{
+    margin-top:60px;
+    align-items: center;
   }
   body .ox10-nav-img-align {
     width: 88px;
     height: 18px;
   }  
+  body .ox10-menu-button {
+    display: block;
+   }  
+   .closebtn{
+    color: #818181;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .closebtn:active{
+    color: var(--ox10-primary-color) !important;
+  }
+  .closebtn:hover{
+    color: var(--ox10-primary-color) !important;
+  }
+  .navbar-collapse {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--ox10-white-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }  
+  .navbar-collapse .ox10-nav-link{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  body .ox10-nav-link{
+    padding-top: 60px;
+    width: 130px;
+    color: #818181 !important;
+    background-size: 0%;
+  }
+  .nav-item a.active{
+    font-size:25px;
+  } 
+  body .ox10-nav-link:hover {
+    background-position: right;
+  }
+
+  body .nav-item{
+    height: 50px;
+    margin-top: 55px;
+    margin-left:0px;
+  }
+  body .ox10-talk-to-us-button{
+    width: 140px;
+    height: 40px;
+    border-radius: 19px;
+    padding: 0px;
+    font-size: 15px;
+    margin: 0px 0px 0px 5px;
+  } 
+  body .ox10-nav-align .nav-item{
+    padding: 10px 0px 25px 0px;
+  } 
   body .ox10-landing-title {
     padding: 48px 20px 48px 20px;
   }
@@ -874,23 +965,6 @@ body .ox10-designer{
   body .ox10-footer-banner .ox10-purple-btn.primary{
     margin-top:48px;
   }
-  body .ox10-talk-to-us-button{
-    width: 85px;
-    height: 40px;
-    border-radius: 19px;
-    padding: 0px;
-    font-size: 12px;
-    margin: 0px 0px 0px 5px;
-  } 
-  .nav-item a.active{
-    border-radius: 5px;
-    line-height: 20px;
-    width: 80px;
-    font-size:18px;
-  } 
-  body .ox10-nav-align .nav-item{
-    padding: 10px 0px 25px 0px;
-  } 
   body .ox10-brand-list-wrap .first-row {
     justify-content: center !important;
   }    
@@ -927,9 +1001,6 @@ body .ox10-designer{
 }
 
 @media only screen and (max-width: 768px) {  
-  body .navbar-collapse {
-    margin: 0% 0% 0% -3%;
-  }
   body .carousel-indicators{
     margin-bottom: 1%;
   }
@@ -973,11 +1044,6 @@ body .ox10-designer{
     margin: 6% 5% 6% 5%;
   }   
 }
-@media only screen and (max-width: 480px) {
-  body .navbar-collapse {
-    margin: 0% 0% 0% -4%;
-  }
-}
 
 @media only screen and (max-width: 360px) {
   body .ox10-landing-carousel .carousel-caption {
@@ -993,9 +1059,6 @@ body .ox10-designer{
   }
 }
 @media only screen and (max-width: 320px) {
-  body .navbar-collapse {
-    margin: 0% 0% 0% -7%;
-  }
   body .carousel-indicators{
     margin-bottom: 0%;
   }
@@ -1052,9 +1115,6 @@ body .ox10-project-proud-wrap-text {
   color: var(--ox10-primary-color) !important;
   margin: 0px 2px;
 }
-.ox10-all-images{
-  display: flex;
-}
 .show{
   opacity: 1;
   visibility: visible;
@@ -1072,24 +1132,6 @@ body .ox10-project-proud-wrap-text {
   display: flex;
   flex-direction: row;
   list-style: none;
-}
-.nav-list-link{
-  text-decoration: none;
-  display: initial;
-  padding: 0.5rem 1rem;
-}
-.ox-10-active-link{
-  background-color: #F1E6FF;
-  font-family: var(--ox10-primary-font-family);
-  border-radius: 6px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--ox10-primary-color) !important;
-  margin: 0px 2px;
-}
-.ox-10-active-link:hover{
-  color: var(--ox10-primary-color) !important;;
 }
 .ox10-all-projects-images {
   padding: 0px 95px 80px 150px;
@@ -1256,7 +1298,7 @@ body .ox10-company-wrap-text {
 Services section start - services.html
 */
   body .ox10-our-services-title {
-    padding: 5% 10% 0% 10%;
+    padding: 60px 150px 0px 150px;
   }
   .ox10-our-services-wrap-text{
     font-weight: 400;
@@ -1274,18 +1316,18 @@ body .ox10-our-services-wrap-text {
 }
 @media only screen and (min-width: 1400px){
   body .ox10-our-services-title {
-      padding: 5% 15% 0% 15%;
+    padding: 60px 331px 0px 330px;
   }
 }
 
 @media only screen and (max-width: 1024px){
   body .ox10-our-services-title {
-      padding: 4% 9% 4% 4%;
+    padding: 60px 65px 0px 65px;
   }
 }
 @media only screen and (max-width: 991px){
   body .ox10-our-services-title{
-      padding: 4%;
+    padding: 48px 20px 0px 20px;
   }
   body .ox10-our-services-wrap-text {
     font-size: 20px;

@@ -1,3 +1,4 @@
+
 $('.filters ul li').click(function(){
     console.log(this);
     $('.filters ul li').removeClass('active');
@@ -16,3 +17,5 @@ $('.filters ul li').click(function(){
       columnWidth: ".all"
     }
   })
+
+ 
