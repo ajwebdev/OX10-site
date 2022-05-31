@@ -1029,11 +1029,16 @@ body .ox10-designer{
     margin-left:20px;
   } 
 }
-@media only screen and (max-width: 540px) {
+
+@media only screen and (max-width: 580px) {
   body .ox10-service-btn-wrap .ox10-purple-btn.primary {
+    display: block;
     margin-top:36px;
     margin-left:0px;
   }  
+}
+
+@media only screen and (max-width: 480px) {
   body .ox10-footer-contact-site {
     margin-top: 10%;
   }
@@ -1045,19 +1050,42 @@ body .ox10-designer{
   }   
 }
 
+@media only screen and (max-width: 415px) {
+  body .ox10-purple-btn.primary {
+    margin-left:13px;
+    margin-top: 0px;
+}
+}
+@media only screen and (max-width: 390px) {
+  body .ox10-purple-btn.primary {
+    display: block;
+    margin-left: 0px;
+    margin-top: 36px;
+}
+  body .ox10-service-btn-wrap .ox10-purple-btn.primary {
+    width: 325px;
+    padding: 13px 10px 13px 10px;
+  }
+}
 @media only screen and (max-width: 360px) {
   body .ox10-landing-carousel .carousel-caption {
     margin-left: -9%;
 }
-  body .ox10-purple-btn.primary{
-    margin-left: 0px;
-    margin-top: 36px;
-  }
   body .ox10-service-btn-wrap .ox10-purple-btn.primary{
-    width:335px;
-    padding:13px 25px 13px 25px;
+    width:320px;
+    font-size: 14px;
+    padding: 13px 17px 13px 17px;
   }
 }
+
+@media only screen and (max-width: 350px){
+  body .ox10-service-btn-wrap .ox10-purple-btn.primary {
+    width: 295px;
+    font-size: 13px;
+    padding: 13px 15px 13px 15px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   body .carousel-indicators{
     margin-bottom: 0%;
@@ -1069,8 +1097,8 @@ body .ox10-designer{
     padding-bottom: 5%;
   }
   body .ox10-service-btn-wrap .ox10-purple-btn.primary{
-    width: 295px;
-    font-size:12px;
+    width: 280px;
+    font-size: 12px;
   }
 }
 
@@ -1224,6 +1252,9 @@ body .ox10-project-proud-wrap-text {
   .nav-list{
     display: block;
   }
+  .nav-list li, .nav-list .active{
+    margin-right:20px;
+  }
   .ox10-all-projects-nav{
     margin-bottom: 0px;
   }
@@ -1333,10 +1364,5 @@ body .ox10-our-services-wrap-text {
     font-size: 20px;
     line-height: 28px;
     padding-right: 0%;
-  }
-}
-@media only screen and (max-width: 768px){
-  body .ox10-our-services-title {
-      padding: 5%;
   }
 }
