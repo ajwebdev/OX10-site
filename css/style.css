@@ -298,6 +298,7 @@ body .ox10-landing-carousel .ox10-banner-text {
 body .ox10-brand-lists{
   padding:120px 165px 120px 165px;
   text-align: center;
+  z-index:1;
 }  
 body .ox10-brand-lists-title {
   font-weight: 600;
