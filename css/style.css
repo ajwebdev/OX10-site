@@ -67,19 +67,12 @@ body .ox10-nav-link:active {
   background-position: left;
 }
 
-.nav-list-link:hover{
-  color: var(--ox10-secondary-color) !important;
-}
-.ox10-nav-link:hover{
-  color: var(--ox10-secondary-color) !important;
-}
-
 body .ox10-talk-to-us-button {
   width: 127px;
   height:48px;
   background-color: var(--ox10-primary-color);
   border-radius: 30px;
-  margin: 0px 0px 0px 140px;
+  margin: 0px 0px 0px 124px;
   font-family: var(--ox10-primary-font-family);
   font-weight: 500;
   font-size: 14px;
@@ -90,6 +83,41 @@ body .ox10-talk-to-us-button {
 }
 body .ox10-talk-to-us-button:hover {
    color:var(--ox10-white-color);
+}
+.navbar-toggler{
+  z-index: 3;
+  padding:0px !important;
+}
+.navbar-toggler .menu-button{
+  padding:0px;
+}
+.ox10-menu-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.ox10-navbar .navbar-toggler {
+  color: white !important;
+  border-color: white !important;
 }
 body .ox10-menu-button {
  border:none;
@@ -112,6 +140,9 @@ body a{
   text-decoration: none;
 }
 
+.navbar>.container-fluid{
+  padding-left:0px;
+}
 body .ox10-custom-container {
   width: 100%;
   max-width: 1320px;
@@ -176,6 +207,9 @@ body .ox10-landing-h1 {
 /********************* Landing title *******************************/
 
 /********************* Banner **************************************/
+body .carousel-indicators{
+  z-index:1;
+}
 body .ox10-landing-carousel .carousel-item {
   max-height: 900px;
   overflow: hidden;
@@ -231,7 +265,7 @@ body .ox10-landing-carousel .carousel-indicators .active::before {
   transform: translate(-50%,-50%);
 }
 body .ox10-landing-carousel .carousel-caption {
-  z-index: 9999;
+  z-index: 0;
   top: 24px;
   left: 15.2%;
   right: auto;
@@ -578,7 +612,7 @@ body .ox10-designer{
     margin-left: 18%;
   }
   body .ox10-talk-to-us-button{
-    margin-left: 310px;
+    margin-left: 320px;
   }
   body .ox10-landing-title {
     padding: 60px 607px 60px 321px;
@@ -635,7 +669,7 @@ body .ox10-designer{
     width: 325px;
   }
   body .ox10-copyright-wrap{
-    padding: 0px 320px 0px 320px;
+    padding: 0px 320px 79px 320px;
   }
 }
 
@@ -683,16 +717,16 @@ body .ox10-designer{
     padding: 24px 50px 22px 50px;
   }
   body .ox10-landing-title {
-    padding: 60px 65px 60px 65px;
+    padding: 60px 55px 60px 55px;
   }
   body .navbar-collapse{
     margin: 26px 0px 26px 100px ;
   }
   body .ox10-talk-to-us-button {
-    margin: 0px 0px 0px 100px;
+    margin: 0px 0px 0px 50px;
   }  
   body .ox10-landing-carousel .carousel-caption {
-    margin-left: -8%;
+    margin-left: -9%;
   }   
   body .ox10-brand-lists{
     padding:120px 120px 120px 120px;
@@ -725,19 +759,28 @@ body .ox10-designer{
  
 
 @media only screen and (max-width: 991px) {  
+  /* menu item navbar animaion */
+ 
+  /* menu item navbar animaion */
+  .ox10-main-start{
+    margin-top:90px;
+  }
   body .ox10-navbar {
-    padding: 24px 10px 22px 10px;
+    padding: 24px 20px 22px 20px;    
+    background-color: var(--ox10-white-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
   }
   body .navbar-collapse {
     margin-top: 0px;
     margin-left:0px;
   }
-  .navbar-collapse:not(.show){
-    display: block;
-  }
+
   .navbar-nav{
     margin-top:60px;
-    align-items: center;
+    align-items: center;    
   }
   body .ox10-nav-img-align {
     width: 88px;
@@ -761,16 +804,16 @@ body .ox10-designer{
   .closebtn:hover{
     color: var(--ox10-primary-color) !important;
   }
-  .navbar-collapse {
-    height: 100%;
+  .navbar-collapse {  
+    width: 100%;
+    height: 100%; 
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
-    background-color: var(--ox10-white-color);
-    overflow-x: hidden;
-    transition: 0.5s;
+    background-color: var(--ox10-white-color); 
   }  
+ 
   .navbar-collapse .ox10-nav-link{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -817,7 +860,7 @@ body .ox10-designer{
   }
   body .ox10-landing-carousel .carousel-caption {
     padding: 6px 10px 6px 10px;
-    margin-left: -12%;
+    margin-left: -13%;
     min-width:130px; 
     height: 52px;
   } 
@@ -963,6 +1006,7 @@ body .ox10-designer{
   }
   body .ox10-footer-banner .ox10-purple-btn.primary{
     margin-top:48px;
+    display: inline-block;
   }
   body .ox10-brand-list-wrap .first-row {
     justify-content: center !important;
@@ -1044,9 +1088,6 @@ body .ox10-designer{
   body .ox10-footer-contact-address {
     padding-right:17%;
   }
-  body .ox10-footer-divider {
-    margin: 6% 5% 6% 5%;
-  }   
 }
 
 @media only screen and (max-width: 415px) {
@@ -1106,7 +1147,7 @@ body .ox10-designer{
 Projects section start - projects.html
 */
 body .ox10-all-projects-proud-title{
-  padding: 60px 150px 0px 150px;
+  padding: 60px 150px 0px 145px;
 }
 body .ox10-project-proud-wrap-text {
   font-weight: 400;
@@ -1187,7 +1228,7 @@ body .ox10-project-proud-wrap-text {
 
 @media only screen and (min-width: 1400px){
   body .ox10-all-projects-proud-title {
-    padding: 60px 331px 0px 331px;
+    padding: 60px 320px 0px 311px;
   }
   body .ox10-project-proud-wrap-text{
     padding-right: 540px;
@@ -1202,7 +1243,7 @@ body .ox10-project-proud-wrap-text {
 }
 @media only screen and (max-width: 1024px){
   body .ox10-all-projects-proud-title {
-    padding: 60px 65px 0px 65px;
+    padding: 60px 50px 0px 50px;
   }
   .ox10-all-projects-nav{
     margin-left: 35px;
@@ -1213,8 +1254,10 @@ body .ox10-project-proud-wrap-text {
 }
 
 @media only screen and (max-width: 991px) {
+
   body .ox10-all-projects-proud-title {
     padding: 48px 20px 0px 20px;
+    margin-top:90px;
   }
     body .ox10-project-proud-wrap-text{
     font-size: 20px;
@@ -1328,36 +1371,31 @@ body .ox10-company-wrap-text {
 Services section start - services.html
 */
   body .ox10-our-services-title {
-    padding: 60px 150px 0px 150px;
+    padding: 60px 180px 0px 140px;
   }
   .ox10-our-services-wrap-text{
-    font-weight: 400;
+      font-weight: 400;
       font-size: 26px;
       line-height: 40px;
       color: var(--ox10-section-text-color);
-      padding: 5% 33% 0% 0%;
+      padding-top: 60px;
+      padding-right: 310px;
   }
-body .ox10-our-services-wrap-text {
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 40px;
-    color: var(--ox10-section-text-color);
-    padding: 5% 33% 0% 0%;
-}
 @media only screen and (min-width: 1400px){
   body .ox10-our-services-title {
-    padding: 60px 331px 0px 330px;
+    padding: 60px 320px 0px 311px;
   }
 }
 
 @media only screen and (max-width: 1024px){
   body .ox10-our-services-title {
-    padding: 60px 65px 0px 65px;
+    padding: 60px 50px 0px 50px;
   }
 }
 @media only screen and (max-width: 991px){
   body .ox10-our-services-title{
     padding: 48px 20px 0px 20px;
+    margin-top: 90px;
   }
   body .ox10-our-services-wrap-text {
     font-size: 20px;

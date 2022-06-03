@@ -15,6 +15,12 @@ $('.nav-link').click(function(){
   }
 });
 
+/*Open Menu Icon - NavBarText */
+function openMenu(x) {
+  x.classList.toggle("change");
+}
+
+/* Testimonial page count */
 $(function(){
   var totalItems = $('.testimonial-carousel .carousel-item').length;
   var currentIndex = $('.testimonial-carousel .carousel-item.active').index() + 1;
