@@ -97,8 +97,8 @@ body .ox10-talk-to-us-button:hover {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
@@ -106,7 +106,7 @@ body .ox10-talk-to-us-button:hover {
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-5px, 4px);
 }
 
 .change .bar2 {opacity: 0;}
@@ -118,6 +118,7 @@ body .ox10-talk-to-us-button:hover {
 .ox10-navbar .navbar-toggler {
   color: white !important;
   border-color: white !important;
+  margin-right: -15px !important;
 }
 body .ox10-menu-button {
  border:none;
@@ -784,8 +785,8 @@ body .ox10-designer{
     align-items: center;    
   }
   body .ox10-nav-img-align {
-    width: 88px;
-    height: 18px;
+    width: 110px;
+    height: 40px;
   }  
   body .ox10-menu-button {
     display: block;
@@ -818,7 +819,7 @@ body .ox10-designer{
   .navbar-collapse .ox10-nav-link{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -830,7 +831,7 @@ body .ox10-designer{
     background-size: 0%;
   }
   .nav-item a.active{
-    font-size:25px;
+    font-size:20px;
   } 
   body .ox10-nav-link:hover {
     background-position: right;
@@ -841,12 +842,11 @@ body .ox10-designer{
     margin-left:0px;
   }
   body .ox10-talk-to-us-button{
-    width: 140px;
-    height: 40px;
-    border-radius: 19px;
+    width: 190px;
+    height: 60px;
     padding: 0px;
-    font-size: 15px;
-    margin: 0px 0px 0px 5px;
+    font-size: 20px;
+    margin: 30px 0px 0px 0px;
   } 
   body .ox10-nav-align .nav-item{
     padding: 10px 0px 25px 0px;

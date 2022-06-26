@@ -52,7 +52,7 @@ $(window).scroll(function() {
 
           {
 
-            duration: 3000,
+            duration: 500,
             easing: 'swing',
             step: function() {
               $this.text(Math.floor(this.countNum) + "+");
